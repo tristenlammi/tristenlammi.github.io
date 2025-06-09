@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    background-color: #141414;
+    color: white;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid #2a2a2a;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 150px;  /* Increased from 80px */
+    height: 150px; /* Increased from 80px */
+    border-radius: 50%;
+    margin: 0 auto 1rem auto; /* Center the image */
+    border: 2px solid #2a2a2a;
+    display: block; /* Ensures proper centering */
+}
+
+.profile h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;  /* Increased from 12px to 16px for more spacing */
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.contact-info .icon {
+    color: #6ba4b8;
+    font-size: 1rem;  /* Reduced from 1.2rem */
+    background-color: #1a1a1a;
+    padding: 8px;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2a2a2a;
+    margin: auto;  /* Ensures perfect centering */
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    background-color: #0a0a0a;
+    padding-top: 0;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    background-color: #1a1a1a;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #2a2a2a;
+    margin: 0 0 2rem auto;  /* Removed right margin */
+    border-radius: 0 0 0 12px;  /* Only round bottom left corner */
+    position: sticky;
+    top: 0;
+    width: fit-content;
+    min-width: 400px;
+    right: 0;  /* Ensure it extends to right edge */
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  /* Changed from flex-end to space-between */
+    gap: 2rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #888;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+}
+
+.nav-bar a:hover {
+    color: #8ecaed;  /* Pastel blue color on hover */
+    background: none;  /* Remove background color change */
+}
+
+.nav-bar a.active {
+    color: #8ecaed;  /* Same pastel blue for active state */
+}
+
+/* Content Area Styles */
+.content {
+    padding: 2rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: #141414;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #2a2a2a;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Icons */
+.icon {
+    color: #6ba4b8;
+    font-size: 1rem;  /* Reduced from 1.2rem */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Preconnect to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Card Example - Web Design Service */
+.card {
+    background-color: #141414;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #2a2a2a;
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Icon Example */
+.icon {
+    color: #6ba4b8;
+    font-size: 1rem;  /* Reduced from 1.2rem */
+}
